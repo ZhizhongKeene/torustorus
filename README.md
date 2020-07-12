@@ -3,3 +3,5 @@ Torus is a creature living in the realms of its 3D environment. The snake like c
 
 # Ways of use
 This project is made for veejay purposes & mood settings.
+
+![alt text](https://zhizhongkeene.github.io/torustorus/image.png)
