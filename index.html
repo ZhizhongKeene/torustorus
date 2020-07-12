@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: black;
+    }
+
+    div {
+      display: none;
+    }
+
+    p{
+      color: white;
+      position: absolute;
+      z-index: -1;
+      width: 20%;
+      margin-left: 10px;
+    }
+  </style>
+  <script src="p5.js"></script>
+  <script src="addons/p5.sound.min.js"></script>
+
+</head>
+  
+<body>
+
+  <p>Torus is a creature living in the realms of its 3D environment. The snake like creature comes in different shapes, colours and lengths. Its hypnotising movement and colours create a psychedelic surrounding. This is his way of moving trough the space and leaving his trail to impress his viewer. <br> <br> Click anywhere to see Torus</p>
+    <div id="torus_one"></div>
+    <div id="torus_two"></div>
+    <div id="torus_three"></div>
+    <div id="torus_four"></div>
+
+
+<script type="text/javascript">
+
+  var objectList = [];
+  objectList.push(document.getElementById("torus_one"));
+  objectList.push(document.getElementById("torus_two"));
+  objectList.push(document.getElementById("torus_three"));
+  objectList.push(document.getElementById("torus_four"));
+  console.log(objectList);
+
+  window.onclick = function() {
+  var i;
+  for (i = 0; i < objectList.length; i++) {
+    objectList[i].style.display = "none";
+  }
+
+
+   objectList[Math.floor(Math.random() * objectList.length)].style.display = "block";
+
+  console.log(objectList[i]);
+  }
+
+
+</script>
+
+  <script src="torus/sketch.js"></script>
+  <script src="torus/sketch1.js"></script>
+  <script src="torus/sketch2.js"></script>
+  <script src="torus/sketch3.js"></script>
+
+
+</body>
+
+</html>
